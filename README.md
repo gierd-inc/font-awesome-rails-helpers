@@ -1,25 +1,26 @@
+# FontAwesome Rails Helpers
+
+This project provides **lightweight helpers** for using Font Awesome icons in **Rails views**.
+
 ## Credits
 
-This project is a fork of the original [font-awesome-sass](https://github.com/FortAwesome/font-awesome-sass) gem, created and maintained by **Travis Chase**.
+This project is a fork of the original [font-awesome-sass](https://github.com/FortAwesome/font-awesome-sass) gem, created and maintained by **Travis Chase**.  
 
 Maintained now by **Gierd Team**.
 
-# FontAwesome::Sass
+---
 
-[![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
+## What's Changed?
 
-> 'font-awesome-sass' is a Sass-powered version of [Font Awesome](http://fontawesome.com/) for your Ruby projects with specific support for Ruby on Rails and Sprockets.
+Unlike the original gem, which provided full support for Sass and Font Awesome assets, this gem has been **refactored** to include **only the helper methods** for rendering Font Awesome icons in Ruby on Rails views.
 
-Refactored to support more Ruby environments with code and documentation humbly used from the excellent [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
+If you need the full Sass-powered Font Awesome integration, you can still use the original [font-awesome-sass](https://github.com/FortAwesome/font-awesome-sass).
 
 ---
 
-## Documentation
+## Installation
 
-Official documentation is hosted at fontawesome.com. Check out the [Ruby on Rails](https://fontawesome.com/docs/web/use-with/ruby-on-rails/) docs.
+Add this gem to your `Gemfile`:
 
-## How to Help
-
-1. Review the following docs before diving in: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
-2. Check the existing [issues](https://github.com/FortAwesome/font-awesome-sass/issues) and see if you can help!
+```ruby
+gem 'font-awesome-rails-helpers', git: 'https://github.com/gierd-inc/font-awesome-rails-helpers.git'
