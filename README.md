@@ -1,3 +1,9 @@
+## Credits
+
+This project is a fork of the original [font-awesome-sass](https://github.com/FortAwesome/font-awesome-sass) gem, created and maintained by **Travis Chase**.
+
+Maintained now by **Gierd Team**.
+
 # FontAwesome::Sass
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)

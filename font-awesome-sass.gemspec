@@ -2,28 +2,28 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'font_awesome/sass/version'
+require_relative 'lib/font_awesome/rails/versions'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'font-awesome-sass'
-  spec.version       = FontAwesome::Sass::VERSION
-  spec.authors       = ['Travis Chase']
-  spec.email         = ['travis@fontawesome.com']
-  spec.description   = 'Font-Awesome SASS gem for use in Ruby projects'
-  spec.summary       = 'Font-Awesome SASS'
-  spec.homepage      = 'https://github.com/FortAwesome/font-awesome-sass'
-  spec.license       = 'MIT'
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ['lib']
+  spec.name          = 'font-awesome-rails-helpers'
+  spec.version       = FontAwesome::Rails::Helpers::VERSION
+  spec.authors       = ['Diego Lopes']
+  spec.email         = ['diego.lopes@gierd.com']
+  spec.summary       = 'Font-Awesome helpers for Rails'
+  spec.description   = 'Lightweight gem providing Font-Awesome helpers for Rails views.'
 
   spec.metadata = {
-    'changelog_uri' => 'https://fontawesome.com/changelog'
+    'original_author' => 'Travis Chase',
+    'original_project' => 'https://github.com/FortAwesome/font-awesome-sass',
+    'license' => 'MIT'
   }
 
-  spec.add_runtime_dependency 'sassc', '~> 2.0'
+  spec.homepage      = 'https://github.com/gierd/font-awesome-rails-helpers'
+  spec.license       = 'MIT'
+  spec.files         = `git ls-files`.split($/)
+  spec.require_paths = ['lib']
 
+  spec.add_dependency 'rails', '>= 5.0'
   spec.add_development_dependency 'bundler', '>= 1.3'
   spec.add_development_dependency 'rake'
 end
